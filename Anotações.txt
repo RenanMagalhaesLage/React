@@ -1,0 +1,14 @@
+Inicio / Instalação:
+
+(1) --> npx create-react-app nomeProjeto
+(2) --> npm start
+
+Segunda opção (requer nodeJs)
+
+(1) -->npm create vite@latest
+(2) -->cd nomePasta
+(3) -->npm install
+(4) -->npm run dev
+
+Formatar código --> ctrl + shift + P
+Sempre criar uma pasta com o nome components
