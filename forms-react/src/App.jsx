@@ -10,6 +10,7 @@ function App() {
   return (
     <>
       <h1>FORMULÁRIOS EM REACT</h1>
+      <p>Estudando formulários em react</p>
       <MyForm />
     </>
   )
