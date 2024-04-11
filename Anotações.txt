@@ -12,3 +12,5 @@ Segunda opção (requer nodeJs)
 
 Formatar código --> ctrl + shift + P
 Sempre criar uma pasta com o nome components
+
+Digitar rafce --> criar arquivo molde

@@ -11,7 +11,7 @@ function App() {
     <>
       <h1>FORMULÁRIOS EM REACT</h1>
       <p>Estudando formulários em react</p>
-      <MyForm />
+      <MyForm user={{name:"Jelson", email:"josias@gmail.com", bio:"Hello", role:"user"}}/>
     </>
   )
 }
