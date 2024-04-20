@@ -1,0 +1,25 @@
+:root {
+    --branco: #F3F3F0; /* Definindo uma variável de cor */
+    --preto: #272B34;
+    --azulClaro:#17A8E0;
+    --amarelo:#FED10A;
+    --verdeAgua:#24BBB1;
+    --azulEscuro:#0779A1;
+    --verde:#93C83E;
+    --rosa:#EF5098;
+}
+
+.App{
+    height: 100vh;
+    width: 100vw;
+}
+
+.search-bar-container{
+    padding-top: 20vh;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+}

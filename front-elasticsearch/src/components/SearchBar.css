@@ -1,0 +1,58 @@
+.group{
+    display: flex; /* Utiliza flexbox para organizar os elementos em linha */
+    justify-content: center;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    width: 100%; /* Define a largura máxima como 100% */
+}
+
+
+.input-wrapper{
+    background-color: var(--branco);
+    border: solid 2px var(--preto);
+    width: 70%;
+    border-radius: 10px;
+    height: 2.9rem;
+    padding: 0 15px;
+    box-shadow: 0px 0px 8px #ddd;
+    display: flex;
+    align-items: center;
+    border-color: var(--preto);
+    margin-left: 25px;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-left: 5px;
+    margin-left: 16px;
+}
+
+/* Estilo para o input quando focado */
+input:focus {
+    outline: none;
+}
+
+/* Estilo base do botão */
+.button {
+    padding: 8px 10px 8px 13px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 10px; /* Borda arredondada */
+    background-color: var(--preto); /* Cor de fundo do botão */
+    color: var(--branco); /* Cor do texto dentro do botão */
+  
+    /* Centraliza o conteúdo do botão verticalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+  
+
+/* Efeito de hover no botão */
+.button:hover {
+    opacity: 0.8; /* Reduz a opacidade ao passar o mouse sobre o botão */
+    cursor: pointer; /* Altera o cursor para indicar interatividade */
+}
