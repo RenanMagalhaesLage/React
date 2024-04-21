@@ -1,6 +1,39 @@
 import React from 'react'
 import "./Switch.css"
 
+//Função que faz o controle da mudança de tema 
+const handleChangeTheme = (event) =>{
+  const isChecked = event.target.checked;
+
+  document.body.style.backgroundColor = isChecked ? '#272B34' : '#F3F3F0';
+  const paragraphElement = document.querySelector('p');
+  const button = document.querySelector('button');
+  const secondButtonById = document.getElementById('secondButton');
+  const svgElement1 = document.querySelector('#submit path');
+  const svgElement2 = document.querySelector('#search path');
+  const searchBar = document.querySelector('#searchBar');
+  if (paragraphElement) {
+    paragraphElement.style.color = isChecked ? '#F3F3F0' : '#272B34';
+  }
+  if (button) {
+    button.style.backgroundColor = isChecked ? '#F3F3F0' : '#272B34';
+    button.style.color = isChecked ? '#272B34':'#fff';
+  }
+  if(secondButtonById){
+    secondButtonById.style.backgroundColor = isChecked ? '#F3F3F0' : '#272B34';
+  }
+  if(svgElement1){
+    svgElement1.style.stroke = isChecked ? '#272B34':'#fff';
+  }
+  if(svgElement2){
+    svgElement2.style.fill = isChecked ? '#fff' : '#272B34';
+  }
+  if(searchBar){
+    searchBar.style.backgroundColor = isChecked ? '#272B34':'#fff';
+  }
+  console.log("Mudou!!");
+}
+
 const Switch = () => {
   return (
     <div className="groupSwitch">
@@ -18,7 +51,7 @@ const Switch = () => {
               <path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path>
             </svg>
           </span>
-          <input type="checkbox" className="input" />
+          <input type="checkbox" className="input" onClick={handleChangeTheme}/>
           <span className="slider"></span>
         </label>
       </div>

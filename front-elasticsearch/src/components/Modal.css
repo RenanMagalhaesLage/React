@@ -13,7 +13,58 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 150px;
+    padding: 100px;
     background-color: var(--branco);
     border-radius: 10px;
+    width: 38%;
+    height: 45%;
+}
+
+.closeIcon{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 0.25rem;
+    transition: 0.4s;
+}
+button{
+    border:none;
+}
+.closeIcon:hover{
+    color: red;
+}
+.radioContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar os itens à esquerda */
+    margin-top: 20px;
+}
+
+.spanRadio{
+    padding-bottom: 15px;
+    color: var(--verdeAgua);
+    font-weight: bold;
+}
+  
+.radioLabel {
+    display: flex;
+    align-items: center; /* Alinhar o texto verticalmente ao lado do botão */
+    margin-bottom: 10px;
+}
+  
+.radioInput {
+    margin-right: 10px;
+}
+
+.formControl{
+    margin-right: 50px;
+}
+
+.partsOfModal{
+    display: flex;
+    margin-bottom: 50px;
+}
+.alinharText{
+    margin-top: 8px;
+    margin-left: 8px;
 }
