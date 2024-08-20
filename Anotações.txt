@@ -14,3 +14,6 @@ Formatar código --> ctrl + shift + P
 Sempre criar uma pasta com o nome components
 
 Digitar rafce --> criar arquivo molde
+
+Dica CSS cores --> extensão Tailwind Shades
+Selecione uma cor e aperte Ctrl K Ctrl G para fornecer suas variações
